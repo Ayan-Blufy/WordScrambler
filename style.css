@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    padding: .5rem 1rem;
+    background-color: #20bf6b;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 15px;
+    font-size: 1.8rem;
+    line-height: 15vh;
+}
+
+section {
+    height: 85vh;
+    display: grid;
+    place-items: center;
+    background-color: #7bed9f;
+}
+
+.gamearea {
+    padding: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: #2ed573;
+    border-radius: 0.8rem 0.8rem;
+}
+
+.h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+input {
+    width: 50%;
+    padding: 15px 0;
+    border-radius: 20px;
+    margin: 2rem 0;
+    border: 0;
+    outline: none;
+    text-align: center;
+    background-color: #dff9fb;
+    font-size: 1.3rem;
+}
+
+.txt {
+    display: none;
+}
+
+.bt {
+    border: 0;
+    /* border-radius: 1rem; */
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    /* margin-bottom: 2rem; */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+.bt:hover {
+    color: white;
+    letter-spacing: .125rem;
+    word-spacing: .2rem;
+    background-color: orangered;
+}
+
+@media screen and (max-width:768px) {
+    header h1 {
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+    .gamearea {
+        padding: 2rem 1rem;
+    }
+    #msg {
+        font-size: 1rem;
+    }
+    input {
+        width: 100%;
+    }
+    .bt {
+        font-size: 0.8rem;
+    }
+}
